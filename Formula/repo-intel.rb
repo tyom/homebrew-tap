@@ -3,7 +3,7 @@ class RepoIntel < Formula
   homepage "https://github.com/tyom/repo-intel"
   url "https://github.com/tyom/repo-intel/releases/download/v1.0.0/repo-intel"
   version "1.0.0"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "41f14c4b91ba4e64cc7a8de2b9ddb0e2d36767478df0c57b36d9ceb7e0801794"
   license "MIT"
 
   depends_on "python@3.12"
