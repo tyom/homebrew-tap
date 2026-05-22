@@ -1,8 +1,8 @@
 class RepoIntel < Formula
   desc "Contributor-stats dashboard generator for any git repo"
   homepage "https://github.com/tyom/repo-intel"
-  url "https://github.com/tyom/repo-intel/releases/download/v1.0.0/repo-intel"
-  version "1.0.0"
+  url "https://github.com/tyom/repo-intel/releases/download/v1/repo-intel"
+  version "1"
   sha256 "41f14c4b91ba4e64cc7a8de2b9ddb0e2d36767478df0c57b36d9ceb7e0801794"
   license "MIT"
 
