@@ -6,12 +6,9 @@ class RepoIntel < Formula
   sha256 "ada0a3cf15ea1c20a86005869b79b56b280acc51e154f29e730250ebb57c3086"
   license "MIT"
 
-  depends_on "python@3.12"
-
+  # No python dependency: the script is stdlib-only and runs on any
+  # python3 >= 3.9, including the one macOS ships with the CLT.
   def install
-    inreplace "repo-intel",
-              %r{\A#!/usr/bin/env python3},
-              "#!#{Formula["python@3.12"].opt_bin}/python3.12"
     bin.install "repo-intel"
   end
 
