@@ -20,6 +20,14 @@ Keychain Master — secure secret management for macOS with `.env` integration.
 brew install tyom/tap/kcm
 ```
 
+### [ungit](https://github.com/tyom/ungit)
+
+Download a repo, directory, or file from GitHub — or emit it as LLM prompt text.
+
+```bash
+brew install tyom/tap/ungit
+```
+
 ## Usage
 
 ```bash
@@ -29,6 +37,7 @@ brew install tyom/tap/<formula>
 
 > Each formula is bumped automatically by its source repo's release workflow on every
 > tagged release — do not hand-edit the files in `Formula/`. See the
-> [repo-intel](https://github.com/tyom/repo-intel/blob/main/.github/workflows/release.yml)
-> and [kcm](https://github.com/tyom/kcm/blob/main/.github/workflows/release.yml)
+> [repo-intel](https://github.com/tyom/repo-intel/blob/main/.github/workflows/release.yml),
+> [kcm](https://github.com/tyom/kcm/blob/main/.github/workflows/release.yml), and
+> [ungit](https://github.com/tyom/ungit/blob/main/.github/workflows/release.yml)
 > release workflows.
