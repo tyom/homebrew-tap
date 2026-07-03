@@ -1,0 +1,43 @@
+name: Bump formula
+
+# Generic formula bumper. Source repos trigger it from their release
+# workflow with a single API call:
+#
+#   gh api repos/tyom/homebrew-tap/dispatches \
+#     -f event_type=bump-formula \
+#     -f "client_payload[formula]=<name>" \
+#     -f "client_payload[version]=<x.y.z>" \
+#     -f "client_payload[url]=<asset url>" \
+#     -f "client_payload[sha256]=<sha>"
+
+on:
+  repository_dispatch:
+    types: [bump-formula]
+
+permissions:
+  contents: write
+
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Update formula
+        env:
+          FORMULA: ${{ github.event.client_payload.formula }}
+          VERSION: ${{ github.event.client_payload.version }}
+          URL: ${{ github.event.client_payload.url }}
+          SHA256: ${{ github.event.client_payload.sha256 }}
+        run: |
+          set -euo pipefail
+          [[ "$FORMULA" =~ ^[a-z0-9-]+$ ]] || { echo "Bad formula name: $FORMULA" >&2; exit 1; }
+          f="Formula/${FORMULA}.rb"
+          [[ -f "$f" ]] || { echo "Unknown formula: $FORMULA" >&2; exit 1; }
+          sed -i -E "s|^(  url ).*|\1\"${URL}\"|"         "$f"
+          sed -i -E "s|^(  version ).*|\1\"${VERSION}\"|" "$f"
+          sed -i -E "s|^(  sha256 ).*|\1\"${SHA256}\"|"   "$f"
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git diff --quiet || git commit -am "${FORMULA} ${VERSION}"
+          git push
