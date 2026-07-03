@@ -6,7 +6,6 @@ class Ungit < Formula
   sha256 "e215f5df5329557527c04aa3253e4d0fc0864e31fe48fecabfb816012f06901a"
   license "MIT"
 
-  depends_on :macos
   depends_on "bash"
 
   def install
