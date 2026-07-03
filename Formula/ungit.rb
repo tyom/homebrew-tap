@@ -3,7 +3,7 @@ class Ungit < Formula
   homepage "https://github.com/tyom/ungit"
   url "https://github.com/tyom/ungit/releases/download/v0.1.0/ungit"
   version "0.1.0"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "e215f5df5329557527c04aa3253e4d0fc0864e31fe48fecabfb816012f06901a"
   license "MIT"
 
   depends_on :macos
