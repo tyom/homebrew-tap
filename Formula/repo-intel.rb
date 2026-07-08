@@ -1,9 +1,9 @@
 class RepoIntel < Formula
   desc "Contributor-stats dashboard generator for any git repo"
   homepage "https://github.com/tyom/repo-intel"
-  url "https://github.com/tyom/repo-intel/releases/download/v1.2.3/repo-intel"
-  version "1.2.3"
-  sha256 "ada0a3cf15ea1c20a86005869b79b56b280acc51e154f29e730250ebb57c3086"
+  url "https://github.com/tyom/repo-intel/releases/download/v1.3.0/repo-intel"
+  version "1.3.0"
+  sha256 "2165ea7516642118f8fe4c25c2514e29efd68eb8733648f20eb1ddc8605baa5a"
   license "MIT"
 
   # No python dependency: the script is stdlib-only and runs on any
