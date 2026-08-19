@@ -28,6 +28,14 @@ Download a repo, directory, or file from GitHub — or emit it as LLM prompt tex
 brew install tyom/tap/ungit
 ```
 
+### [agent-ctx](https://github.com/tyom/agent-ctx)
+
+What a coding agent loads when it opens a repo, and where that comes from.
+
+```bash
+brew install tyom/tap/agent-ctx
+```
+
 ## Usage
 
 ```bash
@@ -38,6 +46,7 @@ brew install tyom/tap/<formula>
 > Each formula is bumped automatically by its source repo's release workflow on every
 > tagged release — do not hand-edit the files in `Formula/`. See the
 > [repo-intel](https://github.com/tyom/repo-intel/blob/main/.github/workflows/release.yml),
-> [kcm](https://github.com/tyom/kcm/blob/main/.github/workflows/release.yml), and
-> [ungit](https://github.com/tyom/ungit/blob/main/.github/workflows/release.yml)
+> [kcm](https://github.com/tyom/kcm/blob/main/.github/workflows/release.yml),
+> [ungit](https://github.com/tyom/ungit/blob/main/.github/workflows/release.yml) and
+> [agent-ctx](https://github.com/tyom/agent-ctx/blob/main/.github/workflows/release.yml)
 > release workflows.
