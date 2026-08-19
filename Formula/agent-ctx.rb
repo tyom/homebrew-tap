@@ -3,7 +3,7 @@ class AgentCtx < Formula
   homepage "https://github.com/tyom/agent-ctx"
   url "https://github.com/tyom/agent-ctx/releases/download/v0.1.0/agent-ctx"
   version "0.1.0"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "5d3bffd98a80fcec907d8b920da8821b8975c37ca236f1078e83905dd3b2cac9"
   license "MIT"
 
   depends_on "bash"
