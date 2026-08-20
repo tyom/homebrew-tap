@@ -1,9 +1,9 @@
 class GitOwns < Formula
   desc "Line ownership per directory, top contributors first"
   homepage "https://github.com/tyom/git-owns"
-  url "https://github.com/tyom/git-owns/releases/download/v0.2.0/git-owns"
-  version "0.2.0"
-  sha256 "b1c6ca1c00784c9cd82ffd34e24c4cc0b59dabdbfcdb413abcb45dd0457807ff"
+  url "https://github.com/tyom/git-owns/releases/download/v0.2.1/git-owns"
+  version "0.2.1"
+  sha256 "76bc6c8895aaba76bdf9119eca7860295af2b78f3ebad51845ae31fe29b01c9a"
   license "MIT"
 
   def install
