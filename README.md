@@ -36,6 +36,14 @@ What a coding agent loads when it opens a repo, and where that comes from.
 brew install tyom/tap/agent-ctx
 ```
 
+### [git-owns](https://github.com/tyom/git-owns)
+
+Who owns which part of the tree: blamed line counts per directory. Runs as `git owns`.
+
+```bash
+brew install tyom/tap/git-owns
+```
+
 ## Usage
 
 ```bash
@@ -47,6 +55,7 @@ brew install tyom/tap/<formula>
 > tagged release — do not hand-edit the files in `Formula/`. See the
 > [repo-intel](https://github.com/tyom/repo-intel/blob/main/.github/workflows/release.yml),
 > [kcm](https://github.com/tyom/kcm/blob/main/.github/workflows/release.yml),
-> [ungit](https://github.com/tyom/ungit/blob/main/.github/workflows/release.yml) and
-> [agent-ctx](https://github.com/tyom/agent-ctx/blob/main/.github/workflows/release.yml)
+> [ungit](https://github.com/tyom/ungit/blob/main/.github/workflows/release.yml),
+> [agent-ctx](https://github.com/tyom/agent-ctx/blob/main/.github/workflows/release.yml) and
+> [git-owns](https://github.com/tyom/git-owns/blob/main/.github/workflows/release.yml)
 > release workflows.
