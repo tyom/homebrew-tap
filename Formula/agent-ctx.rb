@@ -1,9 +1,9 @@
 class AgentCtx < Formula
   desc "Show what a coding agent loads when it opens a repo, and where it comes from"
   homepage "https://github.com/tyom/agent-ctx"
-  url "https://github.com/tyom/agent-ctx/releases/download/v0.1.0/agent-ctx"
-  version "0.1.0"
-  sha256 "5d3bffd98a80fcec907d8b920da8821b8975c37ca236f1078e83905dd3b2cac9"
+  url "https://github.com/tyom/agent-ctx/releases/download/v0.1.1/agent-ctx"
+  version "0.1.1"
+  sha256 "d4658a5ac9cafdbc5664817a62b779b8e247c0eec24dd8a7a8bee436c92cb8c8"
   license "MIT"
 
   depends_on "bash"
